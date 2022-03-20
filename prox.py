@@ -14,7 +14,7 @@ config = {
 
 def start():
 	if len(sys.argv)<2:
-		print "Using default port : 8080 (http-alt)"
+		print "Using default port : ",port1, "(http-alt)"
 		port = port1
 
 	else:
