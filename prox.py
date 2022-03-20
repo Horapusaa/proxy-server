@@ -4,7 +4,7 @@ import socket
 import sys
 import thread
 
-port1=input(print("enter the port : "))
+port1=input("enter the port : ")
 config = {
 			"QUEUE" : 50,				# pending connections
 			"MAX_BYTES" : 999999,		# maximum bytes allowed to be received
