@@ -3,7 +3,8 @@ import os
 import socket
 import sys
 import thread
-
+print("enter the port : ")
+port1=input()
 config = {
 			"QUEUE" : 50,				# pending connections
 			"MAX_BYTES" : 999999,		# maximum bytes allowed to be received
@@ -14,7 +15,7 @@ config = {
 def start():
 	if len(sys.argv)<2:
 		print "Using default port : 8080 (http-alt)"
-		port = 8080
+		port = port1
 
 	else:
 		port = int(sys.argv[1])
